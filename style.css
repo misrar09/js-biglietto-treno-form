@@ -12,26 +12,6 @@ body{
 
 }
 
-
-
-h2, h3{
-    padding-top: 2rem;
-    color: crimson
-}
-
-h1{
-    color: rgb(240, 240, 240);
-    background-color: lightseagreen;
-}
-
-h2{
-   
-    font-size: 23px;
-}
-
-h3{
-    color: rgb(14, 36, 226);
-    font-size: 20px;
-    font-weight: 999;
-
+.buttons{
+    width: 6rem;
 }

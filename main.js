@@ -53,7 +53,7 @@ buttonGenerate.addEventListener("click", function() {
                 }
 
     priceEl.innerHTML = `Your Ticket price is:  ${finalPrice.toFixed(2)} euros only`;
-    document.getElementById("userName").innerHTML = `${fullName}!`;
+    document.getElementById("userName").innerHTML = `${fullName}`;
     
 
 
