@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: rgb(46, 45, 44);
+    padding: 1rem;
+    color: white;
+
+}
+
+
+
+h2, h3{
+    padding-top: 2rem;
+}
+
+h1{
+    color: rgb(240, 240, 240);
+    background-color: lightseagreen;
+}
+
+h2{
+    color: crimson;
+    font-size: 23px;
+}
+
+h3{
+    color: rgb(14, 36, 226);
+    font-size: 20px;
+    font-weight: 999;
+
+}
