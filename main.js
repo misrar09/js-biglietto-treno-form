@@ -4,6 +4,10 @@ const kmInput = document.getElementById("km")
 const ageGroup = document.getElementById("ageGroup");
 const buttonGenerate = document.querySelector("#btnGen");
 const priceEl = document.getElementById("price")
+const fullNameInput = document.getElementById("fullName");
+
+
+
 
 
 //To print the input in Console
@@ -25,10 +29,11 @@ buttonGenerate.addEventListener("click", function() {
 
     // Note: remember to put the input values inside the button
     const travelingDistance = parseFloat(kmInput.value); 
-    const passengerAge = ageGroup.value
+    const passengerAge = ageGroup.value;
+    const fullName = fullNameInput.value;
+
     
     if( isNaN(travelingDistance)) {
-        priceEl.classList.add("error");
         priceEl.innerHTML = "Pleaes insert the distance";
 
     } else
@@ -48,6 +53,8 @@ buttonGenerate.addEventListener("click", function() {
                 }
 
     priceEl.innerHTML = `Your Ticket price is:  ${finalPrice.toFixed(2)} euros only`;
+    document.getElementById("userName").innerHTML = `${fullName}!`;
+    
 
 
 })
