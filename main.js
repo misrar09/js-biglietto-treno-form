@@ -52,7 +52,7 @@ buttonGenerate.addEventListener("click", function() {
                 finalPrice = (pricePerKm * travelingDistance)
                 }
 
-    priceEl.innerHTML = `Your Ticket price is:  ${finalPrice.toFixed(2)} euros only`;
+    priceEl.innerHTML = `${finalPrice.toFixed(2)}€`;
     document.getElementById("userName").innerHTML = `${fullName}`;
     
 

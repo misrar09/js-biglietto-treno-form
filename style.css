@@ -6,12 +6,46 @@
 
 body{
     font-family: sans-serif;
-    background-color: rgb(46, 45, 44);
+    background-color: #b10052;
     padding: 1rem;
-    color: white;
+    font-weight: bold;
+
 
 }
 
 .buttons{
-    width: 6rem;
+    width: 7rem;
+    color: #b10052;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+}
+
+input, select{
+
+    border: 2px solid;
+    border-color: #b10052;
+}
+
+.col-auto{
+    background-color: rgb(170, 170, 170);
+}
+
+
+.buttons:hover{
+    border-color: orange;
+}
+
+h5{
+    color: #b10052;
+
+}
+
+.psDetail{
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+}
+
+p{
+    font-size: 1rem;
 }
