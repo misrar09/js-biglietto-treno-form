@@ -1,3 +1,11 @@
+
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
+  }
+
+  
+
+
 //Geting input from the users:
 
 const kmInput = document.getElementById("km")
@@ -5,8 +13,8 @@ const ageGroup = document.getElementById("ageGroup");
 const buttonGenerate = document.querySelector("#btnGen");
 const priceEl = document.getElementById("price")
 const fullNameInput = document.getElementById("fullName");
-
-
+const form = document.querySelector("form");
+const cancelBtn = document.getElementById("btnCanc");
 
 
 
@@ -32,6 +40,7 @@ buttonGenerate.addEventListener("click", function() {
     const passengerAge = ageGroup.value;
     const fullName = fullNameInput.value;
 
+
     
     if( isNaN(travelingDistance)) {
         priceEl.innerHTML = "Pleaes insert the distance";
@@ -52,8 +61,12 @@ buttonGenerate.addEventListener("click", function() {
                 finalPrice = (pricePerKm * travelingDistance)
                 }
 
+
+//Output on the page:
     priceEl.innerHTML = `${finalPrice.toFixed(2)}€`;
     document.getElementById("userName").innerHTML = `${fullName}`;
+    document.querySelector(".carrozza").innerHTML = `${getRandomInt(1, 10)}`;
+    document.querySelector(".codeCp").innerHTML = `${getRandomInt(10000, 90000)}`
     
 
 
@@ -61,10 +74,15 @@ buttonGenerate.addEventListener("click", function() {
 
 
 
+cancelBtn.addEventListener("click", function () {
+
+  form.reset();
 
 
-            
+  priceEl.innerHTML = "---";
+  document.querySelector(".carrozza").innerHTML = "";
+  document.querySelector(".codeCp").innerHTML = "";
+});
 
-//Output on the page:
 
 
