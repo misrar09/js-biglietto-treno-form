@@ -80,9 +80,13 @@ cancelBtn.addEventListener("click", function () {
 
 
   priceEl.innerHTML = "---";
+  document.getElementById("userName").innerHTML = "";
   document.querySelector(".carrozza").innerHTML = "";
   document.querySelector(".codeCp").innerHTML = "";
 });
+
+
+  
 
 
 
