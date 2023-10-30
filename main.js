@@ -4,8 +4,6 @@ function getRandomInt(min, max) {
   }
 
   
-
-
 //Geting input from the users:
 
 const kmInput = document.getElementById("km")
@@ -73,16 +71,16 @@ buttonGenerate.addEventListener("click", function() {
 })
 
 
-
 cancelBtn.addEventListener("click", function () {
 
-  form.reset();
+    form.reset();
+    finalPrice = "";
+    
 
-
-  priceEl.innerHTML = "---";
-  document.getElementById("userName").innerHTML = "";
-  document.querySelector(".carrozza").innerHTML = "";
-  document.querySelector(".codeCp").innerHTML = "";
+    priceEl.innerHTML = "---";
+    document.getElementById("userName").innerHTML = "";
+    document.querySelector(".carrozza").innerHTML = "";
+    document.querySelector(".codeCp").innerHTML = "";
 });
 
 
